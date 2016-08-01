@@ -1,0 +1,14 @@
+{
+  "name": "bucketListApp",
+  "version": "0.1.0",
+  "description": "A REST server for bucketListApp",
+  "main": "server.js",
+  "author": "Arvind Ravulavaru",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "mongojs": "^2.4.0",
+    "morgan": "^1.7.0",
+    "restify": "^4.1.1"
+  }
+}

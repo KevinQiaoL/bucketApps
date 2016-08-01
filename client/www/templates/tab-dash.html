@@ -1,0 +1,22 @@
+<ion-view view-title="BucketList">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">BucketList</h1>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="card" ng-repeat="item in list">
+      <div class="item item-text-wrap">
+         <span>
+         {{ item.item }}
+         </span>
+         <br/>  <br/>
+         <p class="actions padding">
+            <i class="ion-checkmark-circled icon-actions margin" ng-click="markCompleted('{{item._id}}')"></i>
+            <i class="ion-trash-b icon-actions margin" ng-click="deleteItem('{{item._id}}')"></i>
+         </p>
+      </div>
+   </div>
+   <div ng-if="noData">
+      没有数据 <a ui-sref="tab.add">增加</a>
+   </div>
+  </ion-content>
+</ion-view>
